@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@300&family=Oswald&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="port.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(7, 7, 35);
+            color: #cfcfcf;
+        }
+        nav{
+            display:flex;
+            justify-content:space-around ;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(21, 21, 56);
+        }
+        nav ul{
+            display:flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin:0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #cecdcd;
+        }
+        nav ul li a:hover{
+            color: rgb(235, 143, 220);
+            font-size: 1.01rem;
+        }
+        main hr{
+            border: 0;
+            background: rgb(96, 61, 90);
+            height:1.2px;
+            margin: 20px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .leftsection{
+            font-size: 3rem;
+        }
+        .leftsection .button{
+            padding:20px 0;
+        }
+        .leftsection .btn{
+            padding: 10px;
+            background: #381a3d;
+            color: rgb(225, 220, 220);
+            border: 2px solid rgb(197, 191, 191);
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .rightsection img{
+            width:63%;
+        }
+        .purple{
+            color: rgb(235,143,220);
+        }
+        .text-gray{
+           color:gray; 
+        }
+        #element{
+            color: rgb(235,143,220);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 50px;
+            font-weight: 500;
+            color: #f4eded;
+        }
+        .secondsection .box{
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display : flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width:1px;
+            background-color: white;
+            margin: 0 270px;
+        }
+        .image-top{
+            width:55px;
+            position: relative;
+            top: -32px;
+            left:-9px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 80px;
+            width: 270px;
+            font-size: 30px;
+        }
+        .vertical-desc{
+            position : relative;
+            top: 95px;
+            color: gray;
+            width: 400px;
+            font-size: 23px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/356176b06d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Asma's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Experience</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Asma</span>
+                <div> and i am a passionate</div>
+                <span id="element"></span>
+                
+            </div>
+            <div class="rightsection">
+                <img src="asma.jpeg" alt="">
+            </div>
+        </section>
+       <hr> 
+       <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="fem.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"A self-motivated person bounded by her discipline. I am looking for an opportunity in a reputed organization that will help me deliver my best, 
+                        upgrade my engineering skills, and meet the organization's demands."</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages: </span><br>C,C++</li>
+                            <li><span>Frontend: </span><br>HTML, CSS, JAVASCRIPT</li>
+                            <li><span>Non-Tech skills: </span><br>Communication, Critical Thinking </li>
+                            <li><span>Data Structures and Algorithm</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Bharat Intern </span><br>6/2023-7/2023</li>
+                            <li><span>Rotaract Club </span><br>2021-2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>GL Bajaj Institute of Technology and Management (B.TECH) </span><br>CGPA : 8.314<br>2024</li>
+                            <li><span>Little Flower School (ISC)</span><br>2019</li>
+                            <li><span>H.P. Children's Academy (ICSE)</span><br>2017</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!--Experience-->
+       <section>
+        <div class="secondsection">
+            <span class="text-gray">What I've done so far</span>
+            <h1>Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="bharat.png">
+                    <div class="vertical-title">
+                        Bharat Intern (2023)
+                    </div>
+                    <div class="vertical-desc">
+                        The Web Development internship offers a remarkable opportunity to gain practical work experience and immerse yourself in the dynamic world of creating and improving web-based systems. Throughout the internship, you are presented with a series of challenging projects that mirror real-world scenarios, allowing you to apply your knowledge and skills in a meaningful way.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="PngItem_314528.png">
+                    <div class="vertical-title">
+                    Rotaract Club Of GL Bajaj (2021-2023)
+                </div>
+                <div class="vertical-desc">
+                    Members of Rotaract clubs actively engage in various community service projects, fundraising activities, and social initiatives. We work together to address local and international issues, such as education, healthcare, environmental sustainability, and poverty alleviation. Through these projects, I was able to make a positive impact in their communities and develop a sense of social responsibility.
+                  </div>
+            </div>
+            </div>
+        </section>
+
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Competitive Coder.', 'Web Developer.'],
+          typeSpeed: 50,
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+
+      <!--Work-->
+      <div id="portfolio">
+        <div class="container">
+            <span class="text-gray">My works so far</span>
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="asr.webp">
+                    <div class="lay">
+                        <h3><b>AUTOMATIC SPEECH RECOGNITION</b></h3>
+                        <p>Automatic Speech Recognition or ASR, as it's known in short, <br>is the technology that allows human beings to use their voices to <br>speak with a computer interface in a way that, in its most sophisticated variations, resembles normal human conversation.<br>This is a speech-to-text recognition, in which the presupposition is <br>to convert the spoken or typed words/sentences into English.<br>Tech Stack: HTML, Bootstrap, JavaScript.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgseg.webp">
+                    <div class="lay">
+                        <h3><b>IMAGE SEGMENTATION</b></h3>
+                        <p>The resultant image is segmented based on various
+                            classes.<br> If the threshold is greater then 0.6 we use the prediction module.<br>After analyzing the result of the segmentation and checking the accuracy of the objects classified according to their classes, the comparision of the testing data and actual data was 92%.<br>Tech Stack: Python 3.9, Mask_RCNN_COCO.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btnn">See More</a>
+      </div>
+
+<!--Contact-->
+<hr>
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>asmakhan2619@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9559770599</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/asma26/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/asmakhan2619/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    <a href="https://github.com/asma2607" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Task2/Asma's Resume (2).pdf" download class="btnn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="Submit" class="btnn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Asma</p>
+    </div>
+</div>
+</main>
+</body>
+</html>
